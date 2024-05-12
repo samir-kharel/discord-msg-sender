@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick PA</title>
+    <link rel="icon" type="image/x-icon" href="microphone.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input type="text" required id="webhook" oninput="handleInput(this)" />
+        <label class="placeholder" for="webhook">Your webhook here:</label>
+      </div>
+      <div class="input-container">
+        <textarea
+          name=""
+          id="message"
+          cols="30"
+          rows="5"
+          required
+          oninput="handleInput(this)"
+        ></textarea>
+        <label class="placeholder" for="message">Your message here:</label>
+      </div>
+      <div class="button-container">
+        <button id="sendMessage">Send message</button>
+      </div>
+    </div>
+    <div class="made-by">
+      <a href="https://github.com/samir-kharel" target="_blank">
+        <img src="github-11-xxl.png" alt="Github" />
+      </a>
+      <h4 class="made-with-love">Made with ❤️ by Samir Kharel</h4>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
